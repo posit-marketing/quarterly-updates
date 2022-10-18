@@ -1,0 +1,13 @@
+name: q3_2022_product_updates
+title: Q3 2022 Product Updates
+username: isabella.velasquez
+account: isabella.velasquez
+server: colorado.rstudio.com
+hostUrl: https://colorado.rstudio.com/rsc/__api__
+appId: 13025
+bundleId: 63819
+url: https://colorado.rstudio.com/rsc/2022-q3-product-updates/
+when: 1666111437.69789
+lastSyncTime: 1666111437.6979
+asMultiple: FALSE
+asStatic: TRUE

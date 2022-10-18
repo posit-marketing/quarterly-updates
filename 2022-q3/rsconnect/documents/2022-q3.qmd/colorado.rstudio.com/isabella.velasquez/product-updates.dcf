@@ -1,0 +1,15 @@
+name: product-updates
+title: product-updates
+username: isabella.velasquez
+account: isabella.velasquez
+server: colorado.rstudio.com
+hostUrl: https://colorado.rstudio.com/rsc/__api__
+appId: 13026
+bundleId: 63820
+url: https://colorado.rstudio.com/rsc/content/f7abd4d4-b000-4ba0-8b78-3d22cc6f8ffa/
+when: 1666111685.00137
+lastSyncTime: 1666111685.00138
+quarto_version: 1.1.251
+quarto_engines: markdown
+asMultiple: FALSE
+asStatic: FALSE

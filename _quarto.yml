@@ -1,0 +1,6 @@
+project:
+  title: "quarterly-slides"
+  
+editor: visual
+theme: ["styles.scss"]
+logo: "logo.png"

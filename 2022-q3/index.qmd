@@ -1,0 +1,331 @@
+---
+title: "Q3 2022<br>Product Updates"
+format: 
+  revealjs:
+    title-slide-attributes:
+      data-background-color: "#4D8DC9"
+    self-contained: true
+editor: source
+---
+
+## Table of Contents
+
+::: columns
+::: {.column width="50%"}
+-   [RStudio](#rstudio)
+-   [RStudio Connect](#rstudio-connect)
+-   [Package Managers](#package-managers)
+-   [RStudio in the Cloud](#rstudio-in-the-cloud)
+-   [Quarto](#quarto)
+:::
+
+::: {.column width="50%"}
+-   [Shiny](#shiny)
+-   [Vetiver](#vetiver)
+-   [Selected package releases and updates](#selected-package-releases-and-updates)
+-   [Other updates](#other-updates)
+:::
+:::
+
+# RStudio {#rstudio background-color="#4D8DC9"}
+
+## RStudio Desktop
+
+-   **Find in Files improvements:** Better Find in Files experience for all platforms and particularly Windows users; now powered by regular expressions.
+
+::: columns
+::: {.column width="50%"}
+-   **Hyperlinks:** Better user experience when clicking on hyperlinks, with options to open help pages or go to a website.
+:::
+
+::: {.column width="50%"}
+![](hyperlinks.png){width="400"}
+:::
+:::
+
+::: footer
+[Release notes](https://www.rstudio.com/products/rstudio/release-notes/), [blog post](https://www.rstudio.com/blog/rstudio-2022-07-0-what-s-new)
+:::
+
+## RStudio Workbench
+
+-   **Session information improvements:** Improved communication of session information with renamed elements, consistency across indicators, and more.
+
+::: footer
+[Release notes](https://www.rstudio.com/products/rstudio/release-notes/), [blog post](https://www.rstudio.com/blog/homepage-session-information-improvements/)
+:::
+
+# RStudio Connect {#rstudio-connect background-color="#4D8DC9"}
+
+## RStudio Connect
+
+-   **R is now optional**: R is not required for RStudio Connect, enabling Python-only Connect servers.
+-   **Off-host content execution for Connect on Kubernetes**: Execute content via the RStudio Job Launcher on Kubernetes.
+    -   Make use of native execution paradigms for underlying OS or container images.
+    -   In Beta; looking for feedback.
+
+::: footer
+[Release notes](https://docs.rstudio.com/connect/news/)
+:::
+
+## RStudio Connect
+
+-   **New logging features:** Updated and redesigned content logs can now be accessed from the top Toolbar.
+-   **Shiny for Python:** Shiny for Python applications are now fully supported.
+
+::: callout-warning
+#### Deprecated features
+
+-   TensorFlow is deprecated and disabled by default. You can use another framework (Plumber, Flask, FastAPI) to create an HTTP API for your model deployment going forward.
+-   Python versions 3.5 and 3.6 are now deprecated.
+:::
+
+::: footer
+[Release notes](https://docs.rstudio.com/connect/news/)
+:::
+
+# Package Managers {#package-managers background-color="#4D8DC9"}
+
+## Public Package Manager
+
+-   **Binary packages for Linux:** Binary versions of CRAN packages for the most popular Linux distributions, making installation much faster.
+
+::: footer
+[Release notes](https://docs.rstudio.com/rspm/news/), [blog post](https://www.rstudio.com/blog/publishing-your-own-binary-packages-with-rspm-2022-07/)
+:::
+
+## RStudio Package Manager
+
+-   **PyPI is out of beta:** Use a PyPI mirror with RSPM with better performance and snapshot features.
+-   **Bring your own R binaries:** Upload custom binary packages for internal, GitHub-only, or otherwise non-CRAN packages and make these binaries available to everyone on your team.
+-   **Remote CLI:** Publish remotely with API tokens without having to go through an admin, making it easier to integrate securely with your existing package build process or pipeline.
+
+::: footer
+[Release notes](https://docs.rstudio.com/rspm/news/), [blog post](https://www.rstudio.com/blog/publishing-your-own-binary-packages-with-rspm-2022-07/)
+:::
+
+# RStudio in the Cloud {#rstudio-in-the-cloud background-color="#4D8DC9"}
+
+## RStudio Cloud
+
+-   **Archive projects:** Spaces that are no longer in active use can be archived.
+-   **Improved project search:** Search by a project's author as well as project name.
+
+::: footer
+[Release notes](https://rstudio.cloud/learn/whats-new)
+:::
+
+## Cloud services
+
+-   **RStudio on Amazon SageMaker:** Quickly and easily spin up the RStudio IDE within a Amazon SageMaker environment.
+-   **RStudio Workbench for Azure ML:** RStudio Workbench is accessible on the Azure ML cloud platform, allowing users to access and analyze their Azure data sources.
+
+::: footer
+[Solutions page](https://www.rstudio.com/solutions/rstudio-in-the-cloud/), [AWS page](https://aws.amazon.com/sagemaker/rstudio/)
+:::
+
+## Cloud services
+
+-   **Cloud Marketplace Offerings:** Pre-built applications offered on services such as AWS Marketplace, Azure Marketplace, and Google Cloud Platform make it easier to get started with images built and tested by the vendor.
+-   **RStudio Workbench Launcher:** In addition to Kubernetes, RStudio Workbench's Launcher integrates with Slurm and other HPC environments.
+
+# Quarto {#quarto background-color="#4D8DC9"}
+
+## Quarto
+
+::: columns
+::: {.column width="50%"}
+Quarto is a new open-source scientific and technical publishing system.
+
+::: {style="font-size: 28px"}
+-   "Next generation R Markdown"
+
+-   Works with R, Python, Julia, Javascript, and many other languages
+
+-   Works in Jupyter Notebooks and VS Code
+
+-   Make websites, books, blogs, and more
+
+-   Comes installed with RStudio v2022.07
+:::
+:::
+
+::: {.column width="50%" layout="[[-1], [1], [-1]]"}
+![](hello-quarto.png)
+:::
+:::
+
+::: footer
+[Website](https://quarto.org/), [blog post](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
+:::
+
+## Quarto
+
+In July/August, we held four webinars on Quarto.
+
+-   [Hello Quarto: Share, Collaborate, Teach, Reimagine](https://www.rstudio.com/conference/2022/keynotes/collaborate-with-quarto/) by Mine Çetinkaya-Rundel & Julia Stewart Lowndes (rstudio::conf(2022) Keynote)
+-   [Welcome to Quarto](https://www.youtube.com/watch?v=yvi5uXQMvu4) by Tom Mock
+-   [Building a Blog with Quarto](https://www.youtube.com/watch?v=CVcvXfRyfE0) by Isabella Velásquez
+-   [Beautiful Reports and Presentations with Quarto](https://www.youtube.com/watch?v=hbf7Ai3jnxY) by Tom Mock
+
+::: footer
+[Website](https://quarto.org/), [blog post](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
+:::
+
+# Shiny {#shiny background-color="#4D8DC9"}
+
+## Shiny for Python
+
+Try out Shiny's approachable, reactive framework in Python to create interactive web apps.
+
+![](pyshiny-gallery.png){fig-align="center"}
+
+::: footer
+[Website](https://shiny.rstudio.com/py/), [Get Started with Shiny for Python blog post](https://www.rstudio.com/blog/get-started-with-shiny-for-python/)
+:::
+
+## shinytest2
+
+Test Shiny apps using the testthat framework. <br> <br>
+
+::: columns
+::: {.column width="50%"}
+``` {{r}}
+library(shiny)
+ui <- fluidPage(
+  textInput("name", "What is your name?"),
+  actionButton("greet", "Greet"),
+  textOutput("greeting")
+)
+server <- function(input, output, session) {
+  output$greeting <- renderText({
+    req(input$greet)
+    paste0("Hello ", isolate(input$name), "!")
+  })
+}
+shinyApp(ui, server)
+```
+:::
+
+::: {.column width="50%"}
+![](record-simple-app.png)
+:::
+:::
+
+::: footer
+[Website](https://rstudio.github.io/shinytest2/)
+:::
+
+## shinyuieditor
+
+Announcing a drag-and-drop visual tool for creating and editing the UI of your Shiny app. <br> <br> 
+
+<center>
+![](shiny-ui.gif){width="600px" }
+</center>
+
+::: footer
+[Website](https://rstudio.github.io/shinyuieditor/index.html)
+:::
+
+## ShinyLive
+
+Run Shiny for Python without a server. Share Shiny apps with a URL or deploy them to a static web hosting service.
+
+<iframe src="https://shinylive.io/py/app/#orbit-simulation" width="1200px" height="400px">
+
+</iframe>
+
+::: footer
+[Website](https://shiny.rstudio.com/py/docs/shinylive.html)
+:::
+
+# Vetiver {#vetiver background-color="#4D8DC9"}
+
+## Vetiver
+
+Fluent tooling to version, share, deploy, and monitor a trained model in R or Python.
+
+![](vetiver.png){fig-align="center"}
+
+::: footer
+[Website](https://vetiver.rstudio.com/), [Blog post](https://www.rstudio.com/blog/announce-vetiver/), [Enterprise Meetup](https://www.youtube.com/watch?v=oFQANK13-k4)
+:::
+
+# tidymodels {background-color="#4D8DC9"}
+
+## tidymodels
+
+-   **tidymodels v1.0.0:** a collection of R packages for modeling and machine learning using tidyverse principles that makes modeling ergonomic, effective, and safe.
+-   **censored:** a parsnip extension package for survival models.
+-   **tidyclust:** a reimplementation of tidymodels for clustering models.
+
+::: footer
+[Website](https://www.tidymodels.org/)
+:::
+
+# Selected Package Releases and Updates {#selected-package-releases-and-updates background-color="#4D8DC9"}
+
+## gt
+
+gt has significant updates with v0.6.0 and 0.7.0, including:
+
+-   Output tables to Word documents
+-   Better RTF output tables for Pharma
+-   Accessibility enhancements for HTML table outputs
+
+![](some-gtcars-in-word.png){fig-align="center"}
+
+::: footer
+[gt website](https://gt.rstudio.com/), [release video](https://www.youtube.com/watch?v=F5TV9uWCJps), [v.0.7.0 blog post](https://www.rstudio.com/blog/all-new-things-in-gt-0-7-0/)
+:::
+
+## Pins for Python
+
+pins removes the hassle of managing data across projects, colleagues, and teams. Now available for Python users!
+
+```python
+board.pin_read("mtcars")
+#>    mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+#> 0 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+#> 1 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+#> 2 22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+#> 3 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+#> 4 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+```
+
+
+::: footer
+[pins website](https://rstudio.github.io/pins-python/getting_started.html), [blog post](https://www.rstudio.com/blog/pins-for-python/)
+:::
+
+# Other Updates {#other-updates background-color="#4D8DC9"}
+
+## RStudio is becoming Posit
+
+![](posit.png){fig-align="center"}
+
+::: footer
+[Website](https://posit.co/), [Blog post](https://www.rstudio.com/blog/rstudio-is-becoming-posit/)
+:::
+
+## rstudio::conf(2022)
+
+Talks and materials from rstudio::conf(2022) are now available.
+
+-   Keynote and talk recordings are available on the [conference website](https://www.rstudio.com/conference/2022/2022-conf-talks/).
+-   Talk materials are also available in the [rstudio::conf GitHub repository](https://github.com/rstudio/rstudio-conf/blob/master/2022/README.md#keynotes-and-talks).
+
+Workshop Materials
+
+-   All workshop materials are organized at Workshops at [rstudio::conf(2022)](https://github.com/rstudio-conf-2022).
+
+::: footer
+[Blog post](https://www.rstudio.com/blog/talks-and-workshops-from-rstudio-conf-2022/#talk-recordings-and-materials)
+:::
+
+## Stay in touch
+
+* Subscribe to the [RStudio Blog.](https://www.rstudio.com/blog/subscribe/)
+* Sign up for the [glimpse newsletter](https://pages.rstudio.net/glimpse.html) for regular updates.
+* Check out our [upcoming community events.](https://colorado.rstudio.com/rsc/upcoming-community-events/)
