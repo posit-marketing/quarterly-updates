@@ -2,6 +2,8 @@
 title: "Q3 2022<br>Product Updates"
 format: 
   revealjs:
+    transition: slide
+    background-transition: fade
     title-slide-attributes:
       data-background-color: "#4D8DC9"
     self-contained: true
