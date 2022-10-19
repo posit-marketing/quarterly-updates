@@ -115,7 +115,7 @@ editor: source
 [Release notes](https://rstudio.cloud/learn/whats-new)
 :::
 
-## Cloud services
+## Fully-Managed Services
 
 -   **RStudio on Amazon SageMaker:** Quickly and easily spin up the RStudio IDE within a Amazon SageMaker environment.
 -   **RStudio Workbench for Azure ML:** RStudio Workbench is accessible on the Azure ML cloud platform, allowing users to access and analyze their Azure data sources.
@@ -124,7 +124,7 @@ editor: source
 [Solutions page](https://www.rstudio.com/solutions/rstudio-in-the-cloud/), [AWS page](https://aws.amazon.com/sagemaker/rstudio/)
 :::
 
-## Cloud services
+## Marketplace Offerings
 
 -   **Cloud Marketplace Offerings:** Pre-built applications offered on services such as AWS Marketplace, Azure Marketplace, and Google Cloud Platform make it easier to get started with images built and tested by the vendor.
 -   **RStudio Workbench Launcher:** In addition to Kubernetes, RStudio Workbench's Launcher integrates with Slurm and other HPC environments.
@@ -232,9 +232,7 @@ Announcing a drag-and-drop visual tool for creating and editing the UI of your S
 
 Run Shiny for Python without a server. Share Shiny apps with a URL or deploy them to a static web hosting service.
 
-<iframe src="https://shinylive.io/py/app/#orbit-simulation" width="1200px" height="400px">
-
-</iframe>
+* [Open an example from the Gallery.](https://shinylive.io/py/app/#code=NobwRAdghgtgpmAXGKAHVA6VBPMAaMAYwHsIAXOcpMAMwCdiYACAZwAsBLCbJjmVYnTJMAgujxM6lACZw6EgK4cAOhFVpUAfSVMAvEyVYoAcziaaAGyXSAFKqYODHDF1QKymlhY6y6dyMr4TIEAcoESAAwSAIwRUUwATBEAlHj2jobE7m4eFAAeHgBucgBGUGR8-mQFgamqyaqNELI0rHLFfq7uEllkORIscCwsHKTJiOkOAAK9OZNMU1LNchj5ZPMtTNVkNuPzjpJwZAp0EEw0gRAAVAm8LEwgXWQYELtMV4kAvoFN6uh6onQNg02g4A3acgaEDAnwAukA)
 
 ::: footer
 [Website](https://shiny.rstudio.com/py/docs/shinylive.html)
@@ -261,7 +259,7 @@ Fluent tooling to version, share, deploy, and monitor a trained model in R or Py
 -   **tidyclust:** a reimplementation of tidymodels for clustering models.
 
 ::: footer
-[Website](https://www.tidymodels.org/)
+[Website](https://www.tidymodels.org/), [Q3 2022 tidymodels digest](https://www.tidyverse.org/blog/2022/10/tidymodels-2022-q3/)
 :::
 
 # Selected Package Releases and Updates {#selected-package-releases-and-updates background-color="#4D8DC9"}
