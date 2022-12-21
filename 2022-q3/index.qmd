@@ -6,7 +6,6 @@ format:
     background-transition: fade
     title-slide-attributes:
       data-background-color: "#4D8DC9"
-    self-contained: true
 editor: source
 ---
 
@@ -41,7 +40,7 @@ editor: source
 :::
 
 ::: {.column width="50%"}
-![](hyperlinks.png){width="400"}
+![](hyperlinks.png){width="400" .lightbox}
 :::
 :::
 
