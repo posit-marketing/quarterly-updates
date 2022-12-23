@@ -6,11 +6,10 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="index_files/libs/quarto-contrib/reveal-auto-agenda-0.0.1/reveal-auto-agenda.css" rel="stylesheet"><meta charset="utf-8">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
-  <title>Q4 2022 Product Updates</title>
+  <title>Q4 2022 Product Updates DRAFT</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -324,7 +323,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="white" data-background-image="_extensions/positslides/assets/backgrounds/sample-title-slide-option-1.png" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Q4 2022<br>Product Updates</h1>
+  <h1 class="title">Q4 2022<br>Product Updates<br>DRAFT</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -332,33 +331,387 @@
 </section>
 <section id="table-of-contents" class="slide level2">
 <h2>Table of Contents</h2>
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>RStudio is now Posit</strong></p>
+</div>
+<div class="callout-content">
+<p>We have renamed our products to reflect our new company name.</p>
+</div>
+</div>
+</div>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><a href="#/rstudio-connect">RStudio Connect</a></li>
+<li><a href="#/rstudio">RStudio</a></li>
+<li><a href="#/posit-workbench">Posit Workbench</a></li>
+<li><a href="#/posit-connect">Posit Connect</a></li>
+<li><a href="#/posit-in-the-cloud">Posit in the Cloud</a></li>
+<li><a href="#/posit-package-manager">Posit Package Manager</a></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><a href="#/posit-academy">Posit Academy</a></li>
+<li><a href="#/quarto">Quarto</a></li>
+<li><a href="#/shiny">Shiny</a></li>
+<li><a href="#/solutions-site">Solutions site</a></li>
+<li><a href="#/selected-package-releases-and-updates">Selected package releases and updates</a></li>
 </ul>
 </div>
 </div>
 </section>
 <section>
-<section class="title-slide slide level1 agenda-slide center">
-<h1>RStudio Connect</h1>
-<div class="agenda">
-<ul>
-<li><div class="agenda-active">
-<p>RStudio Connect</p>
-</div></li>
-</ul>
-</div>
+<section id="rstudio" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>RStudio</h1>
+
 </section>
-<section id="rstudio-connect-1" class="slide level2">
-<h2>RStudio Connect</h2>
-<p>Another reason to run Server Status Reports! (new test for deprecated settings usage) Programmatic Provisioning documentation and a workflow for generating the first user and API key Revamp of the Audit log event documentation and addition of “event actor” context Public Jobs API endpoints for enumeration, logs, primary error, and sending a process kill order request Support for Connect configuration via environment variables</p>
-
-<img src="../logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-
+<section id="rstudio-1" class="slide level2">
+<h2>RStudio</h2>
+<p><br></p>
+<ul>
+<li>New <a href="https://docs.posit.co/ide/user/">user guide</a></li>
+<li><strong>Improved accessibility:</strong> Electron port allows for additional features for screen readers, etc.</li>
+<li><strong>Shiny for Python support:</strong> Shiny for Python apps now display a “Run App” button on the Source editor toolbar.</li>
+</ul>
+<div class="footer">
+<p><a href="https://www.rstudio.com/products/rstudio/release-notes/">Release notes</a></p>
 </div>
 </section></section>
+<section>
+<section id="posit-workbench" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Posit Workbench</h1>
+
+</section>
+<section id="posit-workbench-1" class="slide level2">
+<h2>Posit Workbench</h2>
+<p><br></p>
+<ul>
+<li><strong>Many new improvements to the Python experience:</strong>
+<ul>
+<li>Preinstallation of VS Code and extension by default</li>
+<li>Improved handling and proxying of FastAPI, Flask, Shiny for Python</li>
+<li>Automatic rendering of Dash and Streamlit in the UI</li>
+<li>Launch a Python Workbench job from inside VS Code</li>
+</ul></li>
+</ul>
+</section>
+<section id="posit-workbench-2" class="slide level2">
+<h2>Posit Workbench</h2>
+<ul>
+<li><strong>New <a href="https://docs.posit.co/ide/server-pro/user/">user guide</a></strong></li>
+<li><strong>New user interface:</strong> Easies to select editor of choice.</li>
+</ul>
+
+<img data-src="wb.png" alt="The user interface pop up for Workbench, with the Jupyter Notebook, JupyterLab, RStudio Pro, and VS Code options lined up with their respective logos" class="r-stretch"><div class="footer">
+<p><a href="https://github.com/rstudio/rstudio-pro/blob/main/NEWS.md">NEWS file</a>, <a href="https://www.rstudio.com/products/rstudio/release-notes/">Release notes</a></p>
+</div>
+</section></section>
+<section>
+<section id="posit-connect" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Posit Connect</h1>
+
+</section>
+<section id="posit-connect-1" class="slide level2">
+<h2>Posit Connect</h2>
+<p><br></p>
+<ul>
+<li><p><strong>Added support for <a href="https://quarto.org/docs/projects/profiles.html">Quarto project profiles</a> (v1.2+):</strong> Enables adapting the options, environment, and content of your projects for different scenarios.</p></li>
+<li><p><strong><a href="https://docs.posit.co/connect/api/#tag--Jobs">New public Connect Server API endpoints</a> for Content Jobs:</strong> Enables requests for job process status, logs, and process termination.</p></li>
+<li><p><strong><a href="https://docs.rstudio.com/connect/admin/programmatic-provisioning/">Programmatic Provisioning</a>:</strong> Provides scripted user provisioning and content deployment processes.</p></li>
+</ul>
+<div class="footer">
+<p><a href="https://docs.rstudio.com/connect/news/">Release notes</a></p>
+</div>
+</section>
+<section id="posit-connect-2" class="slide level2">
+<h2>Posit Connect</h2>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li><strong><a href="https://docs.rstudio.com/connect/admin/appendix/configuration/#environment-variables">Config settings</a> can be set via environment variables:</strong> Provides a common way to handle sensitive fields or avoid generating configuration files.</li>
+<li><strong><a href="https://docs.rstudio.com/connect/admin/r/package-management/#from-private-r-package-repositories">Content deployment with private R packages from GitHub, GitLab, and Bitbucket</a>:</strong> Posit Connect supports alternate repositories in addition to CRAN using configured Git credentials.</li>
+<li><strong>New runtime settings:</strong> The settings reference defaults even if they are overridden (see image to the right).</li>
+<li><strong>Removal of the <a href="https://docs.rstudio.com/connect/admin/logging/">legacy logger</a>:</strong> Structured logging is the only supported option.</li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-right">
+<figure>
+<p><img data-src="image1.png" height="600"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://docs.rstudio.com/connect/news/">Release notes</a>, <a href="https://posit.co/blog/posit-connect-all-thing-logs-and-logging/">Posit Connect: All Things Logs and Logging blog post</a></p>
+</div>
+</section></section>
+<section>
+<section id="posit-in-the-cloud" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Posit in the Cloud</h1>
+
+</section>
+<section id="posit-cloud" class="slide level2">
+<h2>Posit Cloud</h2>
+<ul>
+<li><strong>Publishing in Posit Cloud now in beta:</strong> Publish outputs directly to Posit Cloud.
+<ul>
+<li>Until now, you could publish <strong>from</strong> Posit Cloud Projects to other services, like RPubs, Connect or shinyapps.io.</li>
+<li>Now you can publish directly <strong>to</strong> Posit Cloud as well, either from a Cloud project, or from an external environment like RStudio installed on your local computer.</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p><a href="https://posit.cloud/learn/whats-new#publishing">Release notes</a></p>
+</div>
+</section>
+<section id="fully-managed-services" class="slide level2">
+<h2>Fully-Managed Services</h2>
+<ul>
+<li><strong>RStudio on Amazon SageMaker:</strong> Quickly and easily spin up the RStudio IDE within a Amazon SageMaker environment.</li>
+<li><strong>RStudio Workbench for Azure ML:</strong> RStudio Workbench is accessible on the Azure ML cloud platform, allowing users to access and analyze their Azure data sources.</li>
+</ul>
+<div class="footer">
+<p><a href="https://www.rstudio.com/solutions/rstudio-in-the-cloud/">Cloud Solutions page</a></p>
+</div>
+</section>
+<section id="marketplace-offerings" class="slide level2">
+<h2>Marketplace Offerings</h2>
+<ul>
+<li><p><strong>Cloud Marketplace Offerings:</strong> Pre-built applications offered on services such as AWS Marketplace, Azure Marketplace, and Google Cloud Platform make it easier to get started with images built and tested by the vendor.</p></li>
+<li><p><strong>RStudio Workbench Launcher:</strong> In addition to Kubernetes, RStudio Workbench’s Launcher integrates with Slurm and other HPC environments.</p></li>
+</ul>
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>See the <a href="https://posit.co/products/uncategorized/aws/">new AWS page on our website</a>.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://www.rstudio.com/solutions/rstudio-in-the-cloud/">Solutions page</a>, <a href="https://posit.co/products/uncategorized/aws/">AWS page</a></p>
+</div>
+</section></section>
+<section>
+<section id="posit-package-manager" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Posit Package Manager</h1>
+
+</section>
+<section id="posit-package-manager-1" class="slide level2">
+<h2>Posit Package Manager</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><strong>Increased support for <a href="https://docs.posit.co/rspm/admin/python/">Python Packages in PPM</a>:</strong>
+<ul>
+<li>Mirror the PyPI site in Package Manager</li>
+<li>Create a local Python package source and include your own, internally developed Python packages</li>
+<li>Expose Python sources as separate repositories, one unified PyPI source, or multiple local repositories</li>
+<li>Build locally or integrate with a separate package build system</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><strong>Remote CLI for publishing remotely:</strong> With API tokens, you can publish packages without having to go through an admin, making it easier to integrate securely with your existing package build process or pipeline.</li>
+<li><strong>Updated <a href="https://docs.posit.co/rspm/admin/getting-started/user-guide/">user guide</a> from the data scientist perspective:</strong> See an overview of Package Manager’s web-based user interface and instructions for configuring a data science environment.</li>
+</ul>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://docs.rstudio.com/rspm/news/">Release notes</a>, <a href="https://www.rstudio.com/blog/publishing-your-own-binary-packages-with-rspm-2022-07/">blog post</a></p>
+</div>
+</section></section>
+<section>
+<section id="posit-academy" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Posit Academy</h1>
+
+</section>
+<section id="posit-academy-1" class="slide level2">
+<h2>Posit Academy</h2>
+<p><br></p>
+<p>Posit Academy is a hands-on way to learn data science effective for working professionals.</p>
+<ul>
+<li>R for Data Science using the tidyverse</li>
+<li><em>(now offering)</em> The Foundations of Python for Data Science</li>
+</ul>
+<div class="footer">
+<p><a href="https://posit.co/products/enterprise/academy/">Academy page</a></p>
+</div>
+</section></section>
+<section>
+<section id="quarto" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Quarto</h1>
+
+</section>
+<section id="quarto-1" class="slide level2">
+<h2>Quarto</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Quarto is a new open-source scientific and technical publishing system.</p>
+<div style="font-size: 28px">
+<ul>
+<li><p>“Next generation R Markdown”</p></li>
+<li><p>Works with R, Python, Julia, Javascript, and many other languages</p></li>
+<li><p>Works in Jupyter Notebooks and VS Code</p></li>
+<li><p>Make websites, books, blogs, and more</p></li>
+<li><p>Comes installed with RStudio v2022.07</p></li>
+</ul>
+<p>The new release v1.2 has over 150 bugfixes and features since we released v1.1 on Aug 26th, 2022!</p>
+</div>
+</div><div class="column quarto-layout-panel" style="width:50%;">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><img data-src="hello-quarto.png"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://quarto.org/">Website</a>, <a href="https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/">blog post</a></p>
+</div>
+</section></section>
+<section>
+<section id="shiny" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Shiny</h1>
+
+</section>
+<section id="shiny-1" class="slide level2">
+<h2>Shiny</h2>
+<h3 id="new-releases">New releases</h3>
+<ul>
+<li><strong><a href="https://rstudio.github.io/bslib/">bslib</a> new R Shiny UI components:</strong> Card API, value boxes, and grid-like layouts.</li>
+</ul>
+
+<img data-src="card.gif" class="r-stretch quarto-figure-center"><div class="footer">
+<p><a href="shiny.rstudio.com/">Shiny website</a></p>
+</div>
+</section>
+<section id="recap-of-recent-releases" class="slide level2 smaller">
+<h2>Recap of recent releases</h2>
+<ul>
+<li><strong>Shiny for Python:</strong> Try out Shiny’s approachable, reactive framework in Python to create interactive web apps.</li>
+<li><strong>shinytest2:</strong> Test Shiny apps using the testthat framework.</li>
+<li><strong>shinyuieditor:</strong> Use a drag-and-drop visual tool for creating and editing the UI of your Shiny app.</li>
+<li><strong>ShinyLive:</strong> Run Shiny for Python without a server. Share Shiny apps with a URL or deploy them to a static web hosting service.</li>
+</ul>
+
+<img data-src="pyshiny-gallery.png" class="r-stretch quarto-figure-center"><div class="footer">
+<p><a href="https://shiny.rstudio.com/py/">Shiny for Python</a>, <a href="https://rstudio.github.io/shinytest2/">shinytest2</a>, <a href="https://rstudio.github.io/shinyuieditor/index.html">shinyuieditor</a></p>
+</div>
+</section>
+<section id="even-more-shiny" class="slide level2">
+<h2>Even more Shiny</h2>
+<ul>
+<li>Check out Jumping River’s <a href="https://www.youtube.com/watch?v=8_k-iPwcleU&amp;list=PLbARZQfpqIKJ6Un06aThcKJC7eQMSgKRD">Shiny in Production Conference YouTube Playlist</a>.</li>
+<li>Register for Appsilon’s <a href="https://shinyconf.appsilon.com/">ShinyConf 2023</a>, March 15-17, 2023.</li>
+<li>Keep up with Shiny news on the <a href="https://shiny.rstudio.com/blog/">Shiny blog</a>.</li>
+</ul>
+</section></section>
+<section>
+<section id="solutions-site" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Solutions site</h1>
+
+</section>
+<section id="solutions-site-1" class="slide level2">
+<h2>Solutions site</h2>
+<p>Check out our new Solutions site at <a href="https://solutions.posit.co/">https://solutions.posit.co/</a>.</p>
+
+<img data-src="solutions.png" width="400" class="r-stretch quarto-figure-center"><div class="footer">
+<p><a href="https://solutions.posit.co/">Solutions site</a></p>
+</div>
+</section></section>
+<section>
+<section id="selected-package-releases-and-updates" class="title-slide slide level1 center" data-background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" data-background-color="#17212B">
+<h1>Selected package releases and updates</h1>
+
+</section>
+<section id="tidyverse" class="slide level2">
+<h2>tidyverse</h2>
+<p><br></p>
+<ul>
+<li><strong><a href="https://www.tidyverse.org/blog/2022/12/purrr-1-0-0/">purrr</a>:</strong> Progress bars, tidyverse consistency, and core purpose refinements.</li>
+<li><strong><a href="https://www.tidyverse.org/blog/2022/11/ggplot2-3-4-0/">ggplot2</a>:</strong> Improved internals and messaging.</li>
+<li><strong><a href="https://www.tidyverse.org/blog/2022/11/dplyr-1-1-0-is-coming-soon/">dplyr 1.1.0 is coming soon</a>:</strong> New joins types, alternative to <code>group_by()</code>, and more.</li>
+<li><strong><a href="https://www.tidyverse.org/blog/2022/12/stringr-1-5-0/">stringr</a>:</strong> New features in <code>str_view()</code> and comparing strings.</li>
+</ul>
+<div class="footer">
+<p><a href="https://www.tidyverse.org/blog/">tidyverse blog</a></p>
+</div>
+</section>
+<section id="gt" class="slide level2">
+<h2>gt</h2>
+<p><br> New features and serious upgrades in gt v0.8.0:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Styling targeted values in the table body</li>
+<li>Decimal alignment for numerical values in a column</li>
+<li>Improvements to date and time formatting</li>
+<li>and much more!</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="gt.png"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-tip callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>See the winners of the 2022 Table Contest!</strong></p>
+</div>
+<div class="callout-content">
+<p>Year after year, the community shares wonderful examples of just how to make presentation tables, and this year was certainly no exception. See this year’s winner on the <a href="https://posit.co/blog/winners-of-the-2022-table-contest/">blog</a>.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://posit.co/blog/new-features-upgrades-in-gt-0-8-0/">gt blog post</a></p>
+</div>
+</section>
+<section id="tidymodels" class="slide level2">
+<h2>tidymodels</h2>
+<ul>
+<li><strong><a href="https://www.tidyverse.org/blog/2022/10/parsnip-checking-1-0-2/">parsnip</a>:</strong> Improvements to model specification checking in tidymodels.</li>
+<li><strong><a href="https://www.tidyverse.org/blog/2022/10/tidymodels-2022-q3/">agua</a>:</strong> Tune h2o models as if they were any other type of model engine.</li>
+<li><strong><a href="https://www.tidyverse.org/blog/2022/12/tidyclust-0-1-0/">tidyclust</a>:</strong> Now on CRAN!</li>
+<li><strong><a href="https://www.tidyverse.org/blog/2022/11/model-calibration/">probably</a>:</strong> Diagnosis and remediation model calibration in tidymodels.</li>
+</ul>
+<div class="footer">
+<p><a href="https://www.tidyverse.org/blog/">tidymodels Q4 roundup</a></p>
+</div>
+</section></section>
+<section id="stay-in-touch" class="title-slide slide level1 center">
+<h1>Stay in touch</h1>
+<ul>
+<li>Subscribe to our <a href="https://posit.co/about/subscription-management/">product announcements, blog, and more</a>.</li>
+<li>Check out our <a href="https://colorado.rstudio.com/rsc/upcoming-community-events/">upcoming community events.</a></li>
+</ul>
+<!-- Thank you to jthomasmock for the Posit template! -->
+<!-- https://github.com/jthomasmock/positslides -->
+<div class="footer footer-default">
+
+</div>
+</section>
     </div>
   </div>
 
@@ -516,14 +869,14 @@
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'slide',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'none',
+        backgroundTransition: 'fade',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,

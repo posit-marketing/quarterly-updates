@@ -18,6 +18,10 @@
   font-weight: 300;
 }
 
+section.has-dark-background > h1 {
+  color: #fff !important;
+}
+
 section.has-dark-background > h2 {
   font-weight: 300 !important;
   color: #fff !important;
@@ -26,9 +30,8 @@ section.has-dark-background > h2 {
 h2 {
   font-weight: 300 !important;
   color: #404041 !important;
+  font-size: 84px !important;
 }
-
-
 
 body {
   font-weight: 400 !important;
