@@ -173,7 +173,7 @@ See the [new AWS page on our website](https://posit.co/products/uncategorized/aw
 ## Posit Academy
 <br>
 
-Posit Academy is a hands-on way to learn data science effective for working professionals.
+Posit Academy is a hands-on way to learn data science effectively for working professionals.
 
 * R for Data Science using the tidyverse
 * *(now offering)* The Foundations of Python for Data Science
