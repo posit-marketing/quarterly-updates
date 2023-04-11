@@ -1,0 +1,324 @@
+---
+title: "Q1 2023<br>Product Updates<br>"
+title-slide-attributes: 
+  data-background-color: white
+  data-background-image: _extensions/jthomasmock/positslides/assets/backgrounds/sample-title-slide-option-1.png
+  data-background-size: contain
+format:
+  positslides-revealjs: 
+    width: "1600"
+    height: "900"
+    transition: slide
+    background-transition: fade
+---
+
+## Table of Contents
+
+::: callout-note
+## RStudio is now Posit
+
+We have renamed our products to reflect our new company name.
+:::
+
+::: columns
+::: {.column width="50%"}
+-   [posit::conf(2023)](#posit-conf)
+-   [RStudio](#rstudio)
+-   [Posit Workbench](#posit-workbench)
+-   [Posit Connect](#posit-connect)
+-   [Posit in the Cloud](#posit-in-the-cloud)
+-   [Posit Package Manager](#posit-package-manager)
+:::
+
+::: {.column width="50%"}
+-   [Posit Academy](#posit-academy)
+-   [Quarto](#quarto)
+-   [Shiny](#shiny)
+-   [Solutions site](#solutions-site)
+-   [Selected package releases and updates](#selected-package-releases-and-updates)
+:::
+:::
+
+# posit::conf(2023) {#posit-conf .smaller}
+<center>
+![](Posit-Conf2023-SalesDeck-Slide.jpg)
+<br>
+[Register today!](https://posit.co/conference/)
+</center>
+
+# RStudio {#rstudio background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## RStudio {.smaller}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+-   **New [user guide](https://docs.posit.co/ide/user/) updates**
+-   **Improved accessibility:** Electron port allows for additional features for screen readers, etc.
+-   **Improvements to auto-completion**
+    - Support for more "complex" start of pipe chains in completions
+    - Improved [ and data.table related completions
+    - Revisited order of completions
+- Data frame and data frame columns completions show more information
+-   Support for R 4.3.x
+:::
+
+::: {.column width="50%"}
+
+<center>
+Watch Thomas Mock walk through the new features in v2023.03:
+
+<script src="https://fast.wistia.com/embed/medias/fjiy7w56g1.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_fjiy7w56g1" style="height:360px;position:relative;width:640px"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/fjiy7w56g1/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div>
+</center>
+:::
+
+:::
+
+::: footer
+[Release notes](https://www.rstudio.com/products/rstudio/release-notes/), [Blog post](https://posit.co/blog/rstudio-2023-03-0-whats-new/)
+:::
+
+# Posit Workbench {#posit-workbench background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Workbench {.smaller}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+-   **Named resource profiles:** Simplify the task of assigning compute for a job or session, such as CPU, memory, or GPU resources.
+-   **Configurable locations for Jupyter Lab and VS Code:** Ensure that the desired Jupyter installation will be executed by Workbench.
+:::
+
+::: {.column width="50%"}
+<center>
+![](image3.png){width=600}
+</center>
+:::
+:::
+
+::: footer
+[Release notes](https://www.rstudio.com/products/rstudio/release-notes/), [Blog post](https://posit.co/blog/rstudio-2023-03-0-whats-new/)
+:::
+
+# Posit Connect {#posit-connect background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Connect
+
+<br>
+
+-   **Python Minimum Version Update to 3.7:** Support for Python versions 3.5 and 3.6 has been removed in Posit Connect.
+-   **TensorFlow Saved Model Support:** Support for TensorFlow Saved Model deployments has been removed.
+- **New Support for RHEL 9:** The [Posit Platform Support](https://www.posit.co/about/platform-support/) page explains the support period for each Linux distribution.
+
+::: footer
+[Release notes](https://docs.rstudio.com/connect/news/), [Blog post](https://posit.co/blog/posit-connect-2023-01-0/)
+:::
+
+## Posit Connect
+
+<br>
+
+Posit Connect now supports Voilà and Jupyter Widgets for adding interactive elements to a Jupyter Notebook. 
+ 
+<center>
+![](jupyterwidgets.gif){width=600}
+</center>
+
+::: footer
+[Release notes](https://docs.rstudio.com/connect/news/), [Blog post](https://posit.co/blog/posit-connect-2023-03-0/)
+:::
+
+# Posit in the Cloud {#posit-in-the-cloud background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Cloud {.smaller}
+<br>
+All accounts can now publish outputs directly to Posit Cloud. You can create, host and share apps, documents and APIs right on Posit Cloud.
+<br>
+
+### Apps
+
+![](publishingApps.png){width=600}
+
+### Documents
+
+![](publishingDocs2.png){width=200}
+
+### APIs
+
+![](publishingAPIs.png){width=300}
+
+To try it out, follow the steps to [Make a Shiny App](https://posit.cloud/learn/guide#intro-create-shiny) in the [Get Started](https://posit.cloud/learn/guide#intro) section of the Guide.
+
+To learn more about publishing, read the [Publish Outputs](https://posit.cloud/learn/guide#publish) section of the Guide.
+
+::: footer
+[Release notes](https://posit.cloud/learn/whats-new#publishing)
+:::
+
+## Fully-Managed Services
+<br>
+<!-- thanks, Nick, for the Cloud slide!-->
+Posit's professional software can be flexibly used on all major cloud platforms to match your cloud strategy and needs.
+
+-   [Deploy](https://solutions.posit.co/architecting/) all Posit Team products in self-managed virtual machines or in Kubernetes on AWS, Azure, and GCP
+-   Quickly and easily spin up development environments in [Amazon SageMaker](https://posit.co/sagemaker) or [AzureML](https://posit.co/azure), no server setup required
+-   Spend cloud budget on Posit licenses in [cloud marketplaces](https://docs.posit.co/rstudio-team/marketplaces/)
+-   In addition to Kubernetes, Workbench's Launcher integrates with Slurm and other HPC environments.
+
+::: footer
+[Cloud Solutions page](https://posit.co/products/cloud/), [Sagemaker page](http://posit.co/sagemaker)
+:::
+
+# Posit Package Manager {#posit-package-manager background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Package Manager
+
+::: columns
+::: {.column width="50%"}
+-   **Increased support for [Python Packages in PPM](https://docs.posit.co/rspm/admin/python/):**
+    -   Mirror the PyPI site in Package Manager
+    -   Create a local Python package source and include your own, internally developed Python packages
+    -   Expose Python sources as separate repositories, one unified PyPI source, or multiple local repositories
+    -   Build locally or integrate with a separate package build system
+:::
+
+::: {.column width="50%"}
+-   **Remote CLI for publishing remotely:** With API tokens, you can publish packages without having to go through an admin, making it easier to integrate securely with your existing package build process or pipeline.
+-   **Updated [user guide](https://docs.posit.co/rspm/admin/getting-started/user-guide/) from the data scientist perspective:** See an overview of Package Manager's web-based user interface and instructions for configuring a data science environment.
+:::
+:::
+
+::: footer
+[Release notes](https://docs.rstudio.com/rspm/news/), [blog post](https://www.rstudio.com/blog/publishing-your-own-binary-packages-with-rspm-2022-07/)
+:::
+
+# Posit Academy {#posit-academy background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Academy {.smaller}
+
+<br>
+
+Posit Academy is a hands-on way to learn data science effectively for working professionals.
+
+-   R for Data Science using the tidyverse
+-   **Learn Python with Posit Academy:** We’ve taken our experience teaching R for data science and applied it to Python. 
+
+<center>
+![](python-academy-blog-hero.jpeg){width=700}
+</center>
+
+::: footer
+[Academy page](https://posit.co/products/enterprise/academy/), [
+Learn Python with Posit Academy blog post](https://posit.co/blog/professional-training-in-r-or-python-with-posit-academy/)
+:::
+
+# Quarto {#quarto background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Quarto {.smaller}
+<br>
+Quarto v1.3 is now available! New features include:
+
+-   **Code Annotation:** Add line based annotations to your code chunks
+
+![](annote-pdf.png){width=500}
+
+-   **Multi-format Publishing:** Automatically link to other formats in HTML documents
+
+![](other-format.png){width=500}
+
+::: footer
+[Website](https://quarto.org/), [Quarto blog](https://quarto.org/docs/blog/)
+:::
+
+## Quarto {.smaller}
+
+::: columns
+::: {.column width="50%"}
+-   **Jupyter Notebook Cell Embedding:** Embed output from an external Jupyter Notebook in a Quarto document
+
+![](notebook-simple.png){width=500}
+
+:::
+
+::: {.column width="50%"}
+-   **Confluence Publishing:** Publish from Quarto to Confluence
+
+::: columns
+::: {.column width="50%"}
+Quarto document:
+![](confluence-qmd.png){width=300}
+:::
+::: {.column width="50%"}
+Published Confluence page:
+![](confluence-page.png){width=300}
+:::
+:::
+:::
+:::
+
+::: footer
+[Website](https://quarto.org/), [Quarto blog](https://quarto.org/docs/blog/)
+:::
+
+# Shiny {#shiny background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Shiny
+
+-   [**bslib**](https://rstudio.github.io/bslib/) **new R Shiny UI components:** Card API, value boxes, and grid-like layouts.
+-   Now available in the [Shiny UI Editor](https://rstudio.github.io/shinyuieditor/), too!
+
+![](add-card-to-app.gif){fig-align="center"}
+
+::: footer
+[Shiny website](shiny.rstudio.com/), [Shiny blog](https://shiny.rstudio.com/blog/)
+:::
+
+# Solutions site {#solutions-site background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Solutions site
+
+Check out our new Solutions site at <https://solutions.posit.co/>.
+
+![](solutions.png){fig-align="center" width="300"}
+
+::: footer
+[Solutions site](https://solutions.posit.co/)
+:::
+
+# Selected package releases and updates {#selected-package-releases-and-updates background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Selected package releases and updates
+<br>
+
+-   [**webR:**](https://www.tidyverse.org/blog/2023/03/webr-0-1-0/) Run R in a web browser
+-   [**pins:**](https://posit.co/blog/announcing-pins-1-1-0/) Pin objects to a variety of pin boards, including Google Cloud Storage
+-   [**vetiver:**](https://posit.co/blog/announcing-vetiver-0-2-0/) Added support for new models and more ways to version, deploy, and monitor your models. 
+-   [**Deep Learning and Scientific Computing with R torch**](https://blogs.rstudio.com/ai/posts/2023-04-05-deep-learning-scientific-computing-r-torch/), the book, is out now!
+
+## tidyverse {.smaller}
+<br>
+
+-   **dplyr:** joins, per-operation grouping, various updates to vectors functions, two new verbs, `pick()` and `reframe()`, along with some changes to `arrange()`
+-   **tidyr:** a new family of string separating functions, along with improvements to `unnest_longer()`, `unnest_wider()`, `pivot_longer()`, and `nest()`
+-   **purrr:** improvements to the map family, new `keep_at()` and `discard_at()` functions, and improvements to flattening and simplification.
+
+Watch Hadley Wickham's video on purrr 1.0.0:
+<br>
+<br>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EGAs7zuRutY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+::: footer
+[tidyverse blog](https://www.tidyverse.org/blog/)
+:::
+
+# Stay in touch
+
+-   Subscribe to our [product announcements, blog, event announcements, and more](https://posit.co/about/subscription-management/).
+-   Check out our [upcoming community events](https://colorado.posit.co/rsc/upcoming-community-events/Upcoming%20Community%20Events.html).
+-   Learn more about [posit::conf(2023)](https://posit.co/conference/).
+
+<!-- Thank you to jthomasmock for the Posit template! -->
+<!-- https://github.com/jthomasmock/positslides -->
