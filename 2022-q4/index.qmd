@@ -44,7 +44,7 @@ We have renamed our products to reflect our new company name.
 
 <br>
 
--   New [user guide](https://docs.posit.co/ide/user/)
+-   **New [user guide](https://docs.posit.co/ide/user/)**
 -   **Improved accessibility:** Electron port allows for additional features for screen readers, etc.
 -   **Shiny for Python support:** Shiny for Python apps now display a "Run App" button on the Source editor toolbar.
 
@@ -66,8 +66,9 @@ We have renamed our products to reflect our new company name.
 
 ## Posit Workbench
 
--   **New [user guide](https://docs.posit.co/ide/server-pro/user/)**
--   **New user interface:** Easies to select editor of choice.
+**New [user guide](https://docs.posit.co/ide/server-pro/user/)**
+
+-   **New user interface:** Easier to select editor of choice.
 
 ![](wb.png){fig-alt="The user interface pop up for Workbench, with the Jupyter Notebook, JupyterLab, RStudio Pro, and VS Code options lined up with their respective logos"}
 
@@ -83,7 +84,7 @@ We have renamed our products to reflect our new company name.
 
 -   **Added support for [Quarto project profiles](https://quarto.org/docs/projects/profiles.html) (v1.2+):** Enables adapting the options, environment, and content of your projects for different scenarios.
 
--   [**New public Connect Server API endpoints**](https://docs.posit.co/connect/api/#tag--Jobs) **for Content Jobs:** Enables requests for job process status, logs, and process termination.
+-   [**New public Connect Server API endpoints**](https://docs.posit.co/connect/api/#tag--Jobs) **for Content Jobs:** Enables requests for job process status, logs, and process termination, fulfilling requests for an easier way to kill running processes.
 
 -   [**Programmatic Provisioning**](https://docs.rstudio.com/connect/admin/programmatic-provisioning/)**:** Provides scripted user provisioning and content deployment processes.
 
@@ -126,7 +127,7 @@ We have renamed our products to reflect our new company name.
 
 ## Fully-Managed Services
 
--   **RStudio on Amazon SageMaker:** Quickly and easily spin up the RStudio IDE within a Amazon SageMaker environment.
+-   **RStudio on Amazon SageMaker:** Quickly and easily spin up the RStudio IDE within an Amazon SageMaker environment.
 -   **RStudio Workbench for Azure ML:** RStudio Workbench is accessible on the Azure ML cloud platform, allowing users to access and analyze their Azure data sources.
 
 ::: footer
