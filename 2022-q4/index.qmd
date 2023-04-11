@@ -1,5 +1,5 @@
 ---
-title: "Q4 2022<br>Product Updates<br>DRAFT"
+title: "Q4 2022<br>Product Updates<br>"
 title-slide-attributes: 
   data-background-color: white
   data-background-image: _extensions/positslides/assets/backgrounds/sample-title-slide-option-1.png
@@ -14,12 +14,11 @@ format:
 
 ## Table of Contents
 
-::: {.callout-note}
+::: callout-note
 ## RStudio is now Posit
 
 We have renamed our products to reflect our new company name.
 :::
-
 
 ::: columns
 ::: {.column width="50%"}
@@ -29,6 +28,7 @@ We have renamed our products to reflect our new company name.
 -   [Posit in the Cloud](#posit-in-the-cloud)
 -   [Posit Package Manager](#posit-package-manager)
 :::
+
 ::: {.column width="50%"}
 -   [Posit Academy](#posit-academy)
 -   [Quarto](#quarto)
@@ -38,33 +38,37 @@ We have renamed our products to reflect our new company name.
 :::
 :::
 
-# RStudio  {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# RStudio {#rstudio background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## RStudio
+
 <br>
 
-* New [user guide](https://docs.posit.co/ide/user/)
-* **Improved accessibility:** Electron port allows for additional features for screen readers, etc.
-* **Shiny for Python support:** Shiny for Python apps now display a “Run App” button on the Source editor toolbar.
+-   **New [user guide](https://docs.posit.co/ide/user/)**
+-   **Improved accessibility:** Electron port allows for additional features for screen readers, etc.
+-   **Shiny for Python support:** Shiny for Python apps now display a "Run App" button on the Source editor toolbar.
 
 ::: footer
 [Release notes](https://www.rstudio.com/products/rstudio/release-notes/)
 :::
 
-# Posit Workbench  {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Posit Workbench {#posit-workbench background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Posit Workbench
+
 <br>
 
-* **Many new improvements to the Python experience:**
-  * Preinstallation of VS Code and extension by default
-  * Improved handling and proxying of FastAPI, Flask, Shiny for Python
-  * Automatic rendering of Dash and Streamlit in the UI 
-  * Launch a Python Workbench job from inside VS Code
-  
+-   **Many new improvements to the Python experience:**
+    -   Preinstallation of VS Code and extension by default
+    -   Improved handling and proxying of FastAPI, Flask, Shiny for Python
+    -   Automatic rendering of Dash and Streamlit in the UI
+    -   Launch a Python Workbench job from inside VS Code
+
 ## Posit Workbench
-* **New [user guide](https://docs.posit.co/ide/server-pro/user/)**
-* **New user interface:** Easies to select editor of choice.
+
+**New [user guide](https://docs.posit.co/ide/server-pro/user/)**
+
+-   **New user interface:** Easier to select editor of choice.
 
 ![](wb.png){fig-alt="The user interface pop up for Workbench, with the Jupyter Notebook, JupyterLab, RStudio Pro, and VS Code options lined up with their respective logos"}
 
@@ -72,50 +76,50 @@ We have renamed our products to reflect our new company name.
 [NEWS file](https://github.com/rstudio/rstudio-pro/blob/main/NEWS.md), [Release notes](https://www.rstudio.com/products/rstudio/release-notes/)
 :::
 
-# Posit Connect {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Posit Connect {#posit-connect background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Posit Connect
+
 <br>
 
-* **Added support for [Quarto project profiles](https://quarto.org/docs/projects/profiles.html) (v1.2+):** Enables adapting the options, environment, and content of your projects for different scenarios.
+-   **Added support for [Quarto project profiles](https://quarto.org/docs/projects/profiles.html) (v1.2+):** Enables adapting the options, environment, and content of your projects for different scenarios.
 
-* **[New public Connect Server API endpoints](https://docs.posit.co/connect/api/#tag--Jobs) for Content Jobs:** Enables requests for job process status, logs, and process termination.
+-   [**New public Connect Server API endpoints**](https://docs.posit.co/connect/api/#tag--Jobs) **for Content Jobs:** Enables requests for job process status, logs, and process termination, fulfilling requests for an easier way to kill running processes.
 
-* **[Programmatic Provisioning](https://docs.rstudio.com/connect/admin/programmatic-provisioning/):** Provides scripted user provisioning and content deployment processes.
+-   [**Programmatic Provisioning**](https://docs.rstudio.com/connect/admin/programmatic-provisioning/)**:** Provides scripted user provisioning and content deployment processes.
 
 ::: footer
 [Release notes](https://docs.rstudio.com/connect/news/)
 :::
 
 ## Posit Connect
+
 <br>
 
 ::: columns
 ::: {.column width="70%"}
-* **[Config settings](https://docs.rstudio.com/connect/admin/appendix/configuration/#environment-variables) can be set via environment variables:** Provides a common way to handle sensitive fields or avoid generating configuration files.
-* **[Content deployment with private R packages from GitHub, GitLab, and Bitbucket](https://docs.rstudio.com/connect/admin/r/package-management/#from-private-r-package-repositories):** Posit Connect supports alternate repositories in addition to CRAN using configured Git credentials.
-* **New runtime settings:** The settings reference defaults even if they are overridden (see image to the right).
-* **Removal of the [legacy logger](https://docs.rstudio.com/connect/admin/logging/):** Structured logging is the only supported option.
+-   [**Config settings**](https://docs.rstudio.com/connect/admin/appendix/configuration/#environment-variables) **can be set via environment variables:** Provides a common way to handle sensitive fields or avoid generating configuration files.
+-   [**Content deployment with private R packages from GitHub, GitLab, and Bitbucket**](https://docs.rstudio.com/connect/admin/r/package-management/#from-private-r-package-repositories)**:** Posit Connect supports alternate repositories in addition to CRAN using configured Git credentials.
+-   **New runtime settings:** The settings reference defaults even if they are overridden (see image to the right).
+-   **Removal of the [legacy logger](https://docs.rstudio.com/connect/admin/logging/):** Structured logging is the only supported option.
 :::
 
 ::: {.column width="30%"}
-![](image1.png){height=600 fig-align="right"}
+![](image1.png){height="600" fig-align="right"}
 :::
 :::
-
 
 ::: footer
 [Release notes](https://docs.rstudio.com/connect/news/), [Posit Connect: All Things Logs and Logging blog post](https://posit.co/blog/posit-connect-all-thing-logs-and-logging/)
 :::
 
-# Posit in the Cloud {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Posit in the Cloud {#posit-in-the-cloud background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Posit Cloud
 
-* **Publishing in Posit Cloud now in beta:** Publish outputs directly to Posit Cloud.
-  * Until now, you could publish **from** Posit Cloud Projects to other services, like RPubs, Connect or shinyapps.io. 
-  * Now you can publish directly **to** Posit Cloud as well, either from a Cloud project, or from an external environment like RStudio installed on your local computer.
-
+-   **Publishing in Posit Cloud now in beta:** Publish outputs directly to Posit Cloud.
+    -   Until now, you could publish **from** Posit Cloud Projects to other services, like RPubs, Connect or shinyapps.io.
+    -   Now you can publish directly **to** Posit Cloud as well, either from a Cloud project, or from an external environment like RStudio installed on your local computer.
 
 ::: footer
 [Release notes](https://posit.cloud/learn/whats-new#publishing)
@@ -123,8 +127,8 @@ We have renamed our products to reflect our new company name.
 
 ## Fully-Managed Services
 
-* **RStudio on Amazon SageMaker:** Quickly and easily spin up the RStudio IDE within a Amazon SageMaker environment.
-* **RStudio Workbench for Azure ML:** RStudio Workbench is accessible on the Azure ML cloud platform, allowing users to access and analyze their Azure data sources.
+-   **RStudio on Amazon SageMaker:** Quickly and easily spin up the RStudio IDE within an Amazon SageMaker environment.
+-   **RStudio Workbench for Azure ML:** RStudio Workbench is accessible on the Azure ML cloud platform, allowing users to access and analyze their Azure data sources.
 
 ::: footer
 [Cloud Solutions page](https://www.rstudio.com/solutions/rstudio-in-the-cloud/)
@@ -132,11 +136,11 @@ We have renamed our products to reflect our new company name.
 
 ## Marketplace Offerings
 
-* **Cloud Marketplace Offerings:** Pre-built applications offered on services such as AWS Marketplace, Azure Marketplace, and Google Cloud Platform make it easier to get started with images built and tested by the vendor.
+-   **Cloud Marketplace Offerings:** Pre-built applications offered on services such as AWS Marketplace, Azure Marketplace, and Google Cloud Platform make it easier to get started with images built and tested by the vendor.
 
-* **RStudio Workbench Launcher:** In addition to Kubernetes, RStudio Workbench’s Launcher integrates with Slurm and other HPC environments.
+-   **RStudio Workbench Launcher:** In addition to Kubernetes, RStudio Workbench's Launcher integrates with Slurm and other HPC environments.
 
-::: {.callout-tip}
+::: callout-tip
 See the [new AWS page on our website](https://posit.co/products/uncategorized/aws/).
 :::
 
@@ -144,23 +148,22 @@ See the [new AWS page on our website](https://posit.co/products/uncategorized/aw
 [Solutions page](https://www.rstudio.com/solutions/rstudio-in-the-cloud/), [AWS page](https://posit.co/products/uncategorized/aws/)
 :::
 
-# Posit Package Manager {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Posit Package Manager {#posit-package-manager background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Posit Package Manager
 
 ::: columns
 ::: {.column width="50%"}
-
-* **Increased support for [Python Packages in PPM](https://docs.posit.co/rspm/admin/python/):**
-  * Mirror the PyPI site in Package Manager
-  * Create a local Python package source and include your own, internally developed Python packages
-  * Expose Python sources as separate repositories, one unified PyPI source, or multiple local repositories
-  * Build locally or integrate with a separate package build system
+-   **Increased support for [Python Packages in PPM](https://docs.posit.co/rspm/admin/python/):**
+    -   Mirror the PyPI site in Package Manager
+    -   Create a local Python package source and include your own, internally developed Python packages
+    -   Expose Python sources as separate repositories, one unified PyPI source, or multiple local repositories
+    -   Build locally or integrate with a separate package build system
 :::
 
 ::: {.column width="50%"}
-* **Remote CLI for publishing remotely:** With API tokens, you can publish packages without having to go through an admin, making it easier to integrate securely with your existing package build process or pipeline.
-* **Updated [user guide](https://docs.posit.co/rspm/admin/getting-started/user-guide/) from the data scientist perspective:** See an overview of Package Manager's web-based user interface and instructions for configuring a data science environment.
+-   **Remote CLI for publishing remotely:** With API tokens, you can publish packages without having to go through an admin, making it easier to integrate securely with your existing package build process or pipeline.
+-   **Updated [user guide](https://docs.posit.co/rspm/admin/getting-started/user-guide/) from the data scientist perspective:** See an overview of Package Manager's web-based user interface and instructions for configuring a data science environment.
 :::
 :::
 
@@ -168,21 +171,22 @@ See the [new AWS page on our website](https://posit.co/products/uncategorized/aw
 [Release notes](https://docs.rstudio.com/rspm/news/), [blog post](https://www.rstudio.com/blog/publishing-your-own-binary-packages-with-rspm-2022-07/)
 :::
 
-# Posit Academy {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Posit Academy {#posit-academy background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Posit Academy
+
 <br>
 
 Posit Academy is a hands-on way to learn data science effectively for working professionals.
 
-* R for Data Science using the tidyverse
-* *(now offering)* The Foundations of Python for Data Science
+-   R for Data Science using the tidyverse
+-   *(now offering)* The Foundations of Python for Data Science
 
 ::: footer
 [Academy page](https://posit.co/products/enterprise/academy/)
 :::
 
-# Quarto {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Quarto {#quarto background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Quarto
 
@@ -214,13 +218,13 @@ The new release v1.2 has over 150 bugfixes and features since we released v1.1 o
 [Website](https://quarto.org/), [blog post](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
 :::
 
-# Shiny {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Shiny {#shiny background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Shiny
 
 ### New releases
 
-* **[bslib](https://rstudio.github.io/bslib/) new R Shiny UI components:** Card API, value boxes, and grid-like layouts.
+-   [**bslib**](https://rstudio.github.io/bslib/) **new R Shiny UI components:** Card API, value boxes, and grid-like layouts.
 
 ![](card.gif){fig-align="center"}
 
@@ -230,10 +234,10 @@ The new release v1.2 has over 150 bugfixes and features since we released v1.1 o
 
 ## Recap of recent releases {.smaller}
 
-* **Shiny for Python:** Try out Shiny’s approachable, reactive framework in Python to create interactive web apps.
-* **shinytest2:** Test Shiny apps using the testthat framework. 
-* **shinyuieditor:** Use a drag-and-drop visual tool for creating and editing the UI of your Shiny app.
-* **ShinyLive:** Run Shiny for Python without a server. Share Shiny apps with a URL or deploy them to a static web hosting service.
+-   **Shiny for Python:** Try out Shiny's approachable, reactive framework in Python to create interactive web apps.
+-   **shinytest2:** Test Shiny apps using the testthat framework.
+-   **shinyuieditor:** Use a drag-and-drop visual tool for creating and editing the UI of your Shiny app.
+-   **ShinyLive:** Run Shiny for Python without a server. Share Shiny apps with a URL or deploy them to a static web hosting service.
 
 ![](pyshiny-gallery.png){fig-align="center"}
 
@@ -243,15 +247,15 @@ The new release v1.2 has over 150 bugfixes and features since we released v1.1 o
 
 ## Even more Shiny
 
-* Check out Jumping River's [Shiny in Production Conference YouTube Playlist](https://www.youtube.com/watch?v=8_k-iPwcleU&list=PLbARZQfpqIKJ6Un06aThcKJC7eQMSgKRD).
-* Register for Appsilon's [ShinyConf 2023](https://shinyconf.appsilon.com/), March 15-17, 2023.
-* Keep up with Shiny news on the [Shiny blog](https://shiny.rstudio.com/blog/).
+-   Check out Jumping River's [Shiny in Production Conference YouTube Playlist](https://www.youtube.com/watch?v=8_k-iPwcleU&list=PLbARZQfpqIKJ6Un06aThcKJC7eQMSgKRD).
+-   Register for Appsilon's [ShinyConf 2023](https://shinyconf.appsilon.com/), March 15-17, 2023.
+-   Keep up with Shiny news on the [Shiny blog](https://shiny.rstudio.com/blog/).
 
-# Solutions site {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Solutions site {#solutions-site background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Solutions site
 
-Check out our new Solutions site at [https://solutions.posit.co/](https://solutions.posit.co/).
+Check out our new Solutions site at <https://solutions.posit.co/>.
 
 ![](solutions.png){fig-align="center" width="400"}
 
@@ -259,30 +263,31 @@ Check out our new Solutions site at [https://solutions.posit.co/](https://soluti
 [Solutions site](https://solutions.posit.co/)
 :::
 
-# Selected package releases and updates {background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+# Selected package releases and updates {#selected-package-releases-and-updates background-image="_extensions/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## tidyverse
+
 <br>
 
-* **[purrr](https://www.tidyverse.org/blog/2022/12/purrr-1-0-0/):** Progress bars, tidyverse consistency, and core purpose refinements.
-* **[ggplot2](https://www.tidyverse.org/blog/2022/11/ggplot2-3-4-0/):** Improved internals and messaging. 
-* **[dplyr 1.1.0 is coming soon](https://www.tidyverse.org/blog/2022/11/dplyr-1-1-0-is-coming-soon/):** New joins types, alternative to `group_by()`, and more.
-* **[stringr](https://www.tidyverse.org/blog/2022/12/stringr-1-5-0/):** New features in `str_view()` and comparing strings.
+-   [**purrr**](https://www.tidyverse.org/blog/2022/12/purrr-1-0-0/)**:** Progress bars, tidyverse consistency, and core purpose refinements.
+-   [**ggplot2**](https://www.tidyverse.org/blog/2022/11/ggplot2-3-4-0/)**:** Improved internals and messaging.
+-   [**dplyr 1.1.0 is coming soon**](https://www.tidyverse.org/blog/2022/11/dplyr-1-1-0-is-coming-soon/)**:** New joins types, alternative to `group_by()`, and more.
+-   [**stringr**](https://www.tidyverse.org/blog/2022/12/stringr-1-5-0/)**:** New features in `str_view()` and comparing strings.
 
 ::: footer
 [tidyverse blog](https://www.tidyverse.org/blog/)
 :::
 
 ## gt
-<br>
-New features and serious upgrades in gt v0.8.0:
+
+<br> New features and serious upgrades in gt v0.8.0:
 
 ::: columns
 ::: {.column width="50%"}
-* Styling targeted values in the table body
-* Decimal alignment for numerical values in a column 
-* Improvements to date and time formatting 
-* and much more!
+-   Styling targeted values in the table body
+-   Decimal alignment for numerical values in a column
+-   Improvements to date and time formatting
+-   and much more!
 :::
 
 ::: {.column width="50%"}
@@ -290,11 +295,10 @@ New features and serious upgrades in gt v0.8.0:
 :::
 :::
 
-:::{.callout-tip}
+::: callout-tip
 ## See the winners of the 2022 Table Contest!
 
 Year after year, the community shares wonderful examples of just how to make presentation tables, and this year was certainly no exception. See this year's winner on the [blog](https://posit.co/blog/winners-of-the-2022-table-contest/).
-
 :::
 
 ::: footer
@@ -303,10 +307,10 @@ Year after year, the community shares wonderful examples of just how to make pre
 
 ## tidymodels
 
-* **[parsnip](https://www.tidyverse.org/blog/2022/10/parsnip-checking-1-0-2/):** Improvements to model specification checking in tidymodels.
-* **[agua](https://www.tidyverse.org/blog/2022/10/tidymodels-2022-q3/):** Tune h2o models as if they were any other type of model engine.
-* **[tidyclust](https://www.tidyverse.org/blog/2022/12/tidyclust-0-1-0/):** Now on CRAN!
-* **[probably](https://www.tidyverse.org/blog/2022/11/model-calibration/):** Diagnosis and remediation model calibration in tidymodels.
+-   [**parsnip**](https://www.tidyverse.org/blog/2022/10/parsnip-checking-1-0-2/)**:** Improvements to model specification checking in tidymodels.
+-   [**agua**](https://www.tidyverse.org/blog/2022/10/tidymodels-2022-q3/)**:** Tune h2o models as if they were any other type of model engine.
+-   [**tidyclust**](https://www.tidyverse.org/blog/2022/12/tidyclust-0-1-0/)**:** Now on CRAN!
+-   [**probably**](https://www.tidyverse.org/blog/2022/11/model-calibration/)**:** Diagnosis and remediation model calibration in tidymodels.
 
 ::: footer
 [tidymodels Q4 roundup](https://www.tidyverse.org/blog/)
@@ -314,8 +318,9 @@ Year after year, the community shares wonderful examples of just how to make pre
 
 # Stay in touch
 
-* Subscribe to our [product announcements, blog, and more](https://posit.co/about/subscription-management/).
-* Check out our [upcoming community events.](https://colorado.rstudio.com/rsc/upcoming-community-events/)
+-   Subscribe to our [product announcements, blog, and more](https://posit.co/about/subscription-management/).
+-   Check out our [upcoming community events.](https://colorado.rstudio.com/rsc/upcoming-community-events/)
 
 <!-- Thank you to jthomasmock for the Posit template! -->
+
 <!-- https://github.com/jthomasmock/positslides -->
