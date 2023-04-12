@@ -27,7 +27,6 @@ We have renamed our products to reflect our new company name.
 -   [Posit Workbench](#posit-workbench)
 -   [Posit Connect](#posit-connect)
 -   [Posit in the Cloud](#posit-in-the-cloud)
--   [Posit Package Manager](#posit-package-manager)
 :::
 
 ::: {.column width="50%"}
@@ -169,29 +168,6 @@ Posit's professional software can be flexibly used on all major cloud platforms 
 
 ::: footer
 [Cloud Solutions page](https://posit.co/products/cloud/), [Sagemaker page](http://posit.co/sagemaker)
-:::
-
-# Posit Package Manager {#posit-package-manager background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
-
-## Posit Package Manager
-
-::: columns
-::: {.column width="50%"}
--   **Increased support for [Python Packages in PPM](https://docs.posit.co/rspm/admin/python/):**
-    -   Mirror the PyPI site in Package Manager
-    -   Create a local Python package source and include your own, internally developed Python packages
-    -   Expose Python sources as separate repositories, one unified PyPI source, or multiple local repositories
-    -   Build locally or integrate with a separate package build system
-:::
-
-::: {.column width="50%"}
--   **Remote CLI for publishing remotely:** With API tokens, you can publish packages without having to go through an admin, making it easier to integrate securely with your existing package build process or pipeline.
--   **Updated [user guide](https://docs.posit.co/rspm/admin/getting-started/user-guide/) from the data scientist perspective:** See an overview of Package Manager's web-based user interface and instructions for configuring a data science environment.
-:::
-:::
-
-::: footer
-[Release notes](https://docs.rstudio.com/rspm/news/), [blog post](https://www.rstudio.com/blog/publishing-your-own-binary-packages-with-rspm-2022-07/)
 :::
 
 # Posit Academy {#posit-academy background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
