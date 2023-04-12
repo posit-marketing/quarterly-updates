@@ -316,7 +316,7 @@ Watch Hadley Wickham's video on purrr 1.0.0:
 
 # Stay in touch
 
--   Subscribe to our [product announcements, blog, event announcements, and more](https://posit.co/about/subscription-management/).
+-   Subscribe to our [product updates, blog, event announcements, and more](https://posit.co/about/subscription-management/).
 -   Check out our [upcoming community events](https://colorado.posit.co/rsc/upcoming-community-events/Upcoming%20Community%20Events.html).
 -   Learn more about [posit::conf(2023)](https://posit.co/conference/).
 
