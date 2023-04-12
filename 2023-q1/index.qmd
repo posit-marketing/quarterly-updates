@@ -156,7 +156,7 @@ Posit Connect now supports Voilà and Jupyter Widgets for adding interactive ele
 [Release notes](https://docs.rstudio.com/rspm/news/), [blog post](https://www.rstudio.com/blog/publishing-your-own-binary-packages-with-rspm-2022-07/)
 :::
 
-# Posit in the Cloud {#posit-in-the-cloud background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-light.png"}
+# Posit in the Cloud {#posit-in-the-cloud background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
 
 ## Posit Cloud {.smaller}
 
