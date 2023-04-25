@@ -304,6 +304,9 @@ Check out our new Solutions site at <https://solutions.posit.co/>.
 <br>
 
 -   [**webR:**](https://www.tidyverse.org/blog/2023/03/webr-0-1-0/) Run R in a web browser
+
+![](webr.gif)
+
 -   [**pins:**](https://posit.co/blog/announcing-pins-1-1-0/) Pin objects to a variety of pin boards, including Google Cloud Storage
 -   [**vetiver:**](https://posit.co/blog/announcing-vetiver-0-2-0/) Added support for new models and more ways to version, deploy, and monitor your models.
 -   [**Deep Learning and Scientific Computing with R torch**](https://blogs.rstudio.com/ai/posts/2023-04-05-deep-learning-scientific-computing-r-torch/), the book, is out now!
@@ -332,6 +335,7 @@ Watch Hadley Wickham's video on purrr 1.0.0: <br> <br>
 
 # Stay in touch
 
+-   Read the [posit::glimpse() newsletter](https://posit.co/blog/posit-glimpse-newsletter-05/) to keep up with the latest Posit news.
 -   Subscribe to our [product updates, blog, event announcements, and more](https://posit.co/about/subscription-management/).
 -   Check out our [upcoming community events](https://colorado.posit.co/rsc/upcoming-community-events/Upcoming%20Community%20Events.html).
 -   Learn more about [posit::conf(2023)](https://posit.co/conference/).
