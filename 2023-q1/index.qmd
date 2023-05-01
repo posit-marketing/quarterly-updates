@@ -160,7 +160,7 @@ Posit Connect now supports Voilà and Jupyter Widgets for adding interactive ele
 
 ## Posit Cloud {.smaller}
 
-<br> All accounts can now publish outputs directly to Posit Cloud. You can create, host and share apps, documents and APIs right on Posit Cloud. <br>
+<br> All accounts can now publish outputs directly to Posit Cloud. You can create, host and share apps, documents and APIs right on Posit Cloud. (note: an account is required to view outputs)<br>
 
 ### Apps
 
