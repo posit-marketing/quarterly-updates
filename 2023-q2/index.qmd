@@ -1,0 +1,261 @@
+---
+title: "Q2 2023<br>Product Updates<br>"
+title-slide-attributes: 
+  data-background-color: white
+  data-background-image: _extensions/jthomasmock/positslides/assets/backgrounds/sample-title-slide-option-1.png
+  data-background-size: contain
+format:
+  positslides-revealjs: 
+    width: "1600"
+    height: "900"
+    transition: slide
+    background-transition: fade
+---
+
+## Table of Contents
+
+::: columns
+::: {.column width="50%"}
+-   [posit::conf(2023)](#posit-conf)
+-   [RStudio](#rstudio)
+-   [Posit Workbench](#posit-workbench)
+-   [Posit Connect](#posit-connect)
+-   [Posit Package Manager](#posit-package-manager)
+-   [Posit in the Cloud](#posit-in-the-cloud)
+:::
+
+::: {.column width="50%"}
+-   [Posit Academy](#posit-academy)
+-   [Shiny](#shiny)
+-   [Solutions site](#solutions-site)
+-   [Selected package releases and updates](#selected-package-releases-and-updates)
+-   [New Python Solutions Page](#new-python-solutions-page)
+:::
+:::
+
+# posit::conf(2023) {#posit-conf .smaller background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-light.png"}
+
+<center>![](Posit-Conf2023-SalesDeck-Slide.jpg){width="1200"} <br> [Register today!](https://posit.co/conference/)</center>
+
+# RStudio {#rstudio background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## RStudio
+
+<br>
+
+- **Improved accessibility:** Electron port allows for additional features for screen readers, etc.
+- Deprecation of Remote Jobs feature as we prepare for a reimagining of the remote desktop feature.
+- Added Quarto for Linux arm64.
+
+::: footer
+[Release notes](https://www.rstudio.com/products/rstudio/release-notes/)
+:::
+
+# Posit Workbench {#posit-workbench background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Workbench {.smaller}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+- AWS web identity federation is now generally available.
+  - Users arrive in a session to find that the AWS CLI and most official SDKs and drivers work without needing a separate step to set up credentials.
+  - Administrators no longer need to accept blanket access to an overloaded instance profile (or an equivalent) by all Workbench users so that they can access AWS resources.
+  - Users do not need to manage sensitive, long-lived AWS credentials themselves to have individually-scoped permissions.
+  - Administrators can grant or revoke granular AWS access for individuals at the Single Sign-On provider level.
+:::
+
+::: {.column width="50%"}
+- Addition of performance enhancements and monitoring performance metrics under high user load (100s of concurrent sessions). 
+- More control over session suspensions.
+:::
+:::
+
+::: footer
+[Release notes](https://www.rstudio.com/products/rstudio/release-notes/), [Admin guide](https://docs.posit.co/ide/server-pro/authenticating_users/aws_credentials.html)
+:::
+
+## Posit Workbench
+### Partnerships
+
+- Develop code using Posit Workbench on Google Cloud Workstations.
+- Integrate Workbench with Altair Grid Engine (AGE) to enable the execution of Workbench sessions on AGE-based HPC clusters.
+
+::: footer
+[Google Cloud webpage](https://posit.co/solutions/google-cloud/), [Altair blog post](https://posit.co/blog/integrate-posit-workbench-with-your-altair-grid-engine/)
+:::
+
+# Posit Connect {#posit-connect background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Connect
+
+<br>
+
+-  Posit Connect’s support for off-host content execution in Kubernetes has entered General Availability (GA), enabling Python, Quarto, and R content to be built and executed in remote containers.
+
+![](off-host.png){fig-align="center"}
+
+-   Shiny for Python is now deployable on the Connect Base license.
+
+::: footer
+[Release notes](https://docs.rstudio.com/connect/news/), [Blog post](https://posit.co/blog/posit-connect-2023-05-0/)
+:::
+
+# Posit Package Manager {#posit-package-manager background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Package Manager
+
+<br>
+
+Several new features in the 2023.04 release of Posit Package Manager provide administrators with greater control over the open-source packages available in internal R and Python repositories.
+
+* Major updates to the PyPI source, significantly reducing sync time and increasing performance.
+* Create curated subsets of PyPI with a `curated-pypi` source, allowing only the Python packages from PyPI you permit. 
+* Globally block packages for an entire instance, preventing downloads of packages with known vulnerabilities or prohibited license types.
+
+
+::: footer
+[Release notes](https://docs.rstudio.com/rspm/news/), [Blog post](https://posit.co/blog/posit-package-manager-2023-04-0/)
+:::
+
+## Posit Public Package Manager
+
+### Use Posit Package Manager to access historical CRAN packages
+
+Following the announcement of the retirement of the Microsoft R Application Network (MRAN) at the end of June 2023, Posit has been working with Microsoft to preserve access to historic CRAN package snapshots.
+
+* Translate the MRAN snapshot URL to point to Posit Public Package Manager or a local Posit Package Manager server by changing the server name.
+* Public Package Manager is now also compatible with the checkpoint package, and it can be used in place of MRAN by setting the `checkpoint.mranUrl` option in R.
+* Join the conversation on the [Package Management topic on Posit Community](https://community.rstudio.com/c/r-admin/package-manager/21).
+
+::: footer
+[Release notes](https://docs.rstudio.com/rspm/news/), [Blog post](https://posit.co/blog/migrating-from-mran-to-posit-package-manager/)
+:::
+
+# Posit in the Cloud {#posit-in-the-cloud background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Cloud {.smaller}
+
+### Access external databases with Data Connections
+
+In any shared space, admins and moderators can create Data Connections that can be used by any member in any project within the space. Data Connections leverage the Posit Professional Drivers to connect to the database of your choice.
+
+Watch a walkthrough below:
+
+<br>
+
+<center><script src="https://fast.wistia.com/embed/medias/jurptk0nka.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_jurptk0nka" style="height:360px;position:relative;width:640px"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/jurptk0nka/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></center>
+
+::: footer
+[Release notes](https://posit.cloud/learn/whats-new#data-connections), [Blog post](https://posit.co/blog/manage-your-database-connections-from-posit-cloud/)
+:::
+
+## Fully-Managed Services
+
+-   **RStudio on Amazon SageMaker:** Quickly and easily spin up the RStudio IDE within an Amazon SageMaker environment.
+-   **RStudio Workbench for Azure ML:** RStudio Workbench is accessible on the Azure ML cloud platform, allowing users to access and analyze their Azure data sources.
+
+::: callout-tip
+See the [Azure ML page](https://posit.co/products/cloud/azure-ml/) and [Sagemaker page](https://posit.co/products/cloud/sagemaker/) on our website.
+:::
+
+::: footer
+[Posit Cloud Products page](https://posit.co/products/cloud/), [Azure ML page](https://posit.co/products/cloud/azure-ml/), [Sagemaker page](https://posit.co/products/cloud/sagemaker/)
+:::
+
+## Marketplace Offerings
+
+-   **Cloud Marketplace Offerings:** Pre-built applications offered on services such as AWS Marketplace, Azure Marketplace, and Google Cloud Platform make it easier to get started with images built and tested by the vendor.
+
+-   **RStudio Workbench Launcher:** In addition to Kubernetes, RStudio Workbench's Launcher integrates with Slurm and other HPC environments.
+
+::: callout-tip
+See the [AWS page on our website](https://posit.co/products/cloud/aws/).
+:::
+
+::: footer
+[Posit Cloud Products page](https://posit.co/products/cloud/), [AWS page](https://posit.co/products/cloud/aws/)
+:::
+
+# Posit Academy {#posit-academy background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Posit Academy {.smaller}
+
+<br>
+
+Posit Academy is a hands-on way to learn data science effectively for working professionals.
+
+-   R for Data Science using the tidyverse
+-   **Learn Python with Posit Academy:** We've taken our experience teaching R for data science and applied it to Python.
+
+<center>![](python-academy-blog-hero.jpeg){width="700"}</center>
+
+::: footer
+[Academy page](https://posit.co/products/enterprise/academy/), [Learn Python with Posit Academy blog post](https://posit.co/blog/professional-training-in-r-or-python-with-posit-academy/)
+:::
+
+# Shiny {#shiny background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Shiny for Python is now generally available
+
+We are thrilled to announce that Shiny for Python has moved from the alpha stage to general availability.
+
+:::: {.columns}
+
+::: {.column width="60%"}
+We’ve gotten some great feedback during the alpha phase of the project, leading to several enhancements:
+
+* Quickstart guide for R users.
+* Interact with plots created using matplotlib, seaborn, and plotnine.
+* A new package, shinywidgets, which makes it possible to use Jupyter widgets in a Shiny app, including Plotly and maps with Leaflet.
+
+... and more!
+:::
+
+::: {.column width="40%"}
+<script src="https://fast.wistia.com/embed/medias/vraiph9fmh.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_vraiph9fmh" style="height:380px;position:relative;width:640px"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/vraiph9fmh/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div>    
+:::
+
+::::
+
+
+::: footer
+[Shiny website](shiny.rstudio.com/), [Shiny blog](https://shiny.rstudio.com/blog/)
+:::
+
+# Selected package releases and updates {#selected-package-releases-and-updates background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## Selected package releases and updates
+
+<br>
+
+- **[Reticulate 1.29](https://posit.co/blog/reticulate-1-29/):** Users working with Python in R can upgrade to obtain major new features that improve ergonomics and diagnostics.
+- **[vetiver 0.2.1](https://posit.co/blog/vetiver-sagemaker/):**  The vetiver R package now provides fluent support for deploying models to Amazon SageMaker.
+
+Watch Tom Mock and Gagandeep Singh demonstrate deploying models to Amazon SageMaker using vetiver:
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Fyc6qTApN9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+# New Python Solutions Page {#new-python-solutions-page background-image="_extensions/jthomasmock/positslides/assets/backgrounds/toc-dark.png" background-color="#17212B"}
+
+## New Python Solutions Page
+
+Our new Python Solutions Page showcases how Posit products can support Python teams.
+
+![](python-page.png){fig-align="center"}
+
+::: footer
+[Python Solutions Page](https://posit.co/solutions/python/)
+:::
+
+# Stay in touch
+
+-   Read the [posit::glimpse() newsletter](https://posit.co/blog/posit-glimpse-newsletter-05/) to keep up with the latest Posit news.
+-   Subscribe to our [product updates, blog, event announcements, and more](https://posit.co/about/subscription-management/).
+-   Check out our [upcoming community events](https://colorado.posit.co/rsc/upcoming-community-events/Upcoming%20Community%20Events.html).
+-   Learn more about [posit::conf(2023)](https://posit.co/conference/).
+
+<!-- Thank you to jthomasmock for the Posit template! -->
+
+<!-- https://github.com/jthomasmock/positslides -->
